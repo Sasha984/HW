@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 120px 96px;
+}
+.title{
+    color: black;
+font-family: Raleway;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: 96px;
+letter-spacing: -0.8px
+}
+.item{
+    color: black;
+    font-family: Raleway;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: -0.56px; 
+    margin-top: 96px;
+    margin-right: 0px;
+    margin-bottom: 24px;
+    margin-left: 0px;
+}
+.style-text{
+    color: black;
+font-family: Raleway;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: -0.32px;
+margin-top: 24px;
+margin-right: 0px;
+margin-bottom: 64px;
+margin-left: 0px;
+}
+.item1{
+    color: black;
+font-family: Raleway;
+font-size: 56px;
+font-style: normal;
+font-weight: 600;
+line-height: 64px;
+letter-spacing: -0.56px;
+margin-top: 64px;
+margin-right: 0px;
+margin-bottom: 24px;
+margin-left: 0px;
+}
+.style-text1{
+    color: black;
+font-family: Raleway;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: -0.32px;
+margin: 24px 0px;
+}
+.item2{
+color: black;
+font-family: Raleway;
+font-size: 56px;
+font-style: normal;
+font-weight: 600;
+line-height: 64px;
+letter-spacing: -0.56px;
+margin-top: 88px;
+margin-right: 0px;
+margin-bottom: 24px;
+margin-left: 0px;
+}
+.item3{
+    color: black;
+font-family: Raleway;
+font-size: 56px;
+font-style: normal;
+font-weight: 600;
+line-height: 64px;
+letter-spacing: -0.56px;
+margin-top: 112px;
+margin-right: 0px;
+margin-bottom: 24px;
+margin-left: 0px;
+}
