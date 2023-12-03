@@ -23,9 +23,7 @@ letter-spacing: -0.8px
     line-height: 64px;
     letter-spacing: -0.56px; 
     margin-top: 96px;
-    margin-right: 0px;
     margin-bottom: 24px;
-    margin-left: 0px;
 }
 .style-text{
     color: black;
@@ -36,9 +34,7 @@ font-weight: 400;
 line-height: 40px;
 letter-spacing: -0.32px;
 margin-top: 24px;
-margin-right: 0px;
 margin-bottom: 64px;
-margin-left: 0px;
 }
 .item1{
     color: black;
@@ -49,9 +45,7 @@ font-weight: 600;
 line-height: 64px;
 letter-spacing: -0.56px;
 margin-top: 64px;
-margin-right: 0px;
 margin-bottom: 24px;
-margin-left: 0px;
 }
 .style-text1{
     color: black;
@@ -72,9 +66,7 @@ font-weight: 600;
 line-height: 64px;
 letter-spacing: -0.56px;
 margin-top: 88px;
-margin-right: 0px;
 margin-bottom: 24px;
-margin-left: 0px;
 }
 .item3{
     color: black;
@@ -85,7 +77,5 @@ font-weight: 600;
 line-height: 64px;
 letter-spacing: -0.56px;
 margin-top: 112px;
-margin-right: 0px;
 margin-bottom: 24px;
-margin-left: 0px;
 }
