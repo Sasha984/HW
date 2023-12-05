@@ -3,7 +3,6 @@
 }
 body{
     margin: 0px;
-    padding: 120px 96px;
     font-family: Roboto;
 }
 .header{
@@ -163,8 +162,7 @@ line-height: 30px;
 }
 
 .footer{
-    background-color:#F2F2F2;
-    padding: 81px 0px;
+    text-align: center;
 }
 .footer-container{
     width: 1440px;
@@ -180,12 +178,9 @@ line-height: 30px;
     margin-left: 702px; 
 }
 .social-footer{
-    width: 18px;
-    height: 18px;
-    display: inline;
-    margin-top: 24px;
-    margin-right: 672px;
-    margin-bottom: 81x;
-    margin-left: 672px; 
-   
+    display: inline-block;
+    margin-right: 22px;
+    text-align: center;
 }
+
+
