@@ -159,7 +159,6 @@ line-height: 30px;
     margin: 33px auto; 
     text-align: center;
 }
-
 .footer{
     text-align: center;
 }
@@ -175,9 +174,11 @@ line-height: 30px;
     margin-bottom: 24px;
     margin-left: auto; 
 }
-
 .social-footer a {
     margin-right: 22px;
     display: inline-block;
     text-align: center;
+}
+.social-footer a:last-child{
+    margin-right: 0;
 }
