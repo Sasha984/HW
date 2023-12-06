@@ -18,15 +18,14 @@ body{
 }
 .logo{
     display: inline-block;
-    width: 390px;
+    width: 395px;
 }
-.social{
+.social a{
     display: inline-block;
     text-align: right;
-    width: 390px;
-
+    margin-right: 21px;
+    width: 395px;
 }
-
 .main-section{
     background-color: #FAC960;
     padding: 110px 0px;
@@ -170,17 +169,15 @@ line-height: 30px;
 }
 .logo-footer{
     width: 37px;
-    height: 37px;
     display: block;
     margin-top: 81px;
-    margin-right: 701px;
+    margin-right: auto;
     margin-bottom: 24px;
-    margin-left: 702px; 
+    margin-left: auto; 
 }
-.social-footer{
-    display: inline-block;
+
+.social-footer a {
     margin-right: 22px;
+    display: inline-block;
     text-align: center;
 }
-
-
