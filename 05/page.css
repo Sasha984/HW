@@ -15,16 +15,22 @@ body{
 .header-container{
     width: 800px;
     margin: 0 auto;
+
 }
 .logo{
     display: inline-block;
     width: 395px;
 }
-.social a{
-    display: inline-block;
+.social{
     text-align: right;
-    margin-right: 21px;
+}
+.social:first-child{
+    width: 370px;
+    display: inline-block;
+}
+.social:last-child{
     width: 395px;
+    display: inline-block;
 }
 .main-section{
     background-color: #FAC960;
