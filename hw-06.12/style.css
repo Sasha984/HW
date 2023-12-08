@@ -2,38 +2,26 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0px;
+    margin: 0 auto;
     font-family: 'Inter';
     background-image: url(images/Rectangle1.png);
     background-size: 100%;
 }
 .header{
-    margin: 0 auto;
     max-width: 1728px;
+    padding-top: 70px;
+    padding-right: 55px;
+    padding-bottom: 115px;
+    padding-left: 55px;
+    display: flex;
     
 }
 .logo-container{
-    margin-left: 80px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.logo-container:nth-child(2){
-    
 }
 
 .search-container{
-    justify-content: flex-end;
-    display: flex;
-    flex-direction: row;
-    padding-top: 42px;
-    padding-right: 33px;
-    padding-bottom: 60px;
-    padding-left: 0px;
-
 }
 .data{
     color: #C8C8C8;
-    font-size: 30px;
-  
+    font-size: 29px;
 }
