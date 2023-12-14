@@ -20,24 +20,16 @@ body{
 }
 .logo-container{
     display: flex;
-    flex-direction: row;
-    flex: 796px;
+   flex-direction: row;
     padding-top: 70px;
 }
-.logo-container:only-child(2){
-    position: absolute;
-    top: 80px;
-    left: 210px;
-}
+
 .data{
     color: #C8C8C8;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    position: absolute;
-    left: 230px;
-    top: 77px;
     font-family:'Inter';
     text-align: center;
 }
@@ -48,13 +40,13 @@ body{
     width: 4px;
     height: 28px;
     margin-right: 26px;
+    margin-left: 16px;
 }
 .search-container{
     padding-top: 42px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    flex: 796px;
     gap: 45px;
 }
 .search{
