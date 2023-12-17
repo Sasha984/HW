@@ -467,16 +467,36 @@ margin-bottom: 41px;
         margin-bottom: 64px;
     }
     .button-f{
-        display: inline-flex;
+        display: flex;
         padding: 12px 50px;
         justify-content: center;
         align-items: center;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+    
     }
     .button-l p{
         display: none;
     }
     .r-container{
         width: 100%;
+        height: 100vh;
+    }
+    .back-text{
+        top: 48%;
+        right: 0%;
+        width: 221px;
+        height: 281px;
+      }
+    .img-teapot{
+        margin-left: 17px;
+        width: 217px;
+        height: 300px;
+    }
+    .inputs{
+        padding-left: 34% ;
+        margin-top: 329px;
     }
 }
   
