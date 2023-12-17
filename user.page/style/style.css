@@ -1,0 +1,11 @@
+:root{
+    --bg-color: black;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    font-family:'Inter';
+    font-size: 18px;
+}

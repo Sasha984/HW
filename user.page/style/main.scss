@@ -1,0 +1,22 @@
+:root{
+    --bg-color: #212529;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    font-family:'Inter';
+    font-size: 18px;
+}
+header{
+    padding-left: 3rem;
+
+    .logo{
+        display: inline-flex;
+        padding: 0.5rem 0.75rem;
+        align-items: flex-start;
+        gap: 0.3125rem;
+}
+
+}
