@@ -1,22 +1,46 @@
 :root{
     --bg-color: #212529;
+    --first-font: 'Inter';
+    --second-font: 'Poppins';
+    --third-font: 'Roboto';
+}
+html{
+    font-size: 18px;
 }
 *{
     box-sizing: border-box;
 }
 body{
+    background-color: #212529;
     margin: 0 auto;
-    font-family:'Inter';
-    font-size: 18px;
 }
-header{
-    padding-left: 3rem;
+.header-wrapper{
+    padding-left: 3.87rem;
+    background-color: #212529;
 
     .logo{
         display: inline-flex;
-        padding: 0.5rem 0.75rem;
+        padding: 1.56rem 3.88rem;
         align-items: flex-start;
         gap: 0.3125rem;
 }
-
+    .search a{
+        color: #FFF;
+        font-family: var(--second-font);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+    .button-h{
+        display: inline-flex;
+        padding: 0.75rem 1.625rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3.125rem;
+        border: 2px solid #FFB742;
+        background: #FFB742;
+    }
 }
