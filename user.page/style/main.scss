@@ -76,8 +76,8 @@ body{
     }
 }
 .cover{
-  
-   
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
           .name{
             color: #FFF;
             text-align: center;
@@ -109,6 +109,7 @@ body{
             line-height: 5.67813rem;
             text-transform: capitalize;
             text-align: center;
+            margin-bottom: 1.56rem;
           }
           .style-text{
             color: #FFF;
@@ -119,32 +120,54 @@ body{
             line-height: 3.17206rem;
             text-transform: capitalize;
             text-align: center;
+            margin-bottom: 1.38rem;
           }
         .avatar{
-            width: 100%;
-            margin-bottom: 8.52rem; 
+            width: 100%; 
             text-align: center;
         }
-    }
-.info-blocks{
-    width: 90%;
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+    
+    
+.blocks{
+    margin-top: 8.52rem;
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-around;}
+    justify-content: space-around;
+
 
 
     .block{
         display: flex;
-    
         background-color: rgba(56, 62, 69, 0.44);
         width: 29%;
         height: 7.5rem;
+        color: #FFF;
+        font-family: var(--first-font);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 193.023%;
+        text-transform: capitalize;
+    }
+    
+        .text-block{
+            color: #FFB742;
+            text-align: center;
+            font-family: var(--first-font);
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 126.023%; 
+            text-transform: capitalize;
+        
+
 
     }
+}
 
 
+}
 
 
 
