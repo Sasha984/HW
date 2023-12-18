@@ -15,12 +15,17 @@ body{
     margin: 0 auto;
 }
 .header-wrapper{
-    padding-left: 3.87rem;
+    padding-top: 1.56rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 7.8rem;
     background-color: #212529;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
     .logo{
-        display: inline-flex;
-        padding: 1.56rem 3.88rem;
+        display: flex;
         align-items: flex-start;
         gap: 0.3125rem;
 }
@@ -34,13 +39,114 @@ body{
         text-transform: capitalize;
         text-decoration: none;
     }
+          .search a:first-child{
+           margin-right: 1.56rem;
+          }
+          .search a:nth-child(2){
+            margin-right: 1.56rem;
+           }
+           .search a:nth-child(3){
+            margin-right: 1.56rem;
+           }
+           .search a:nth-child(4){
+            margin-right: 1.56rem;
+           }
+           .search a:last-child{
+            margin-right: 0rem;
+    }
+
+.search a:hover{
+    color: #FFB742;
+}
     .button-h{
-        display: inline-flex;
+        display: flex;
+        justify-content: end;
         padding: 0.75rem 1.625rem;
         justify-content: center;
         align-items: center;
         border-radius: 3.125rem;
         border: 2px solid #FFB742;
         background: #FFB742;
+        color: #212529;
+        font-family: var(--second-font);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.875rem;
     }
 }
+.cover{
+  
+   
+          .name{
+            color: #FFF;
+            text-align: center;
+            font-family: var(--first-font);
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 3.17206rem;
+            text-transform: capitalize;
+            text-align: center;
+          }
+          .orange-text-cover{
+            color: #FFB742;
+            font-family: var(--first-font);
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 3.17206rem;
+            text-decoration-line: underline;
+            text-transform: capitalize;
+            text-align: center;
+          }
+          .item{
+            color: #FFF;
+            font-family: var(--first-font);
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 5.67813rem;
+            text-transform: capitalize;
+            text-align: center;
+          }
+          .style-text{
+            color: #FFF;
+            font-family: var(--first-font);
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 3.17206rem;
+            text-transform: capitalize;
+            text-align: center;
+          }
+        .avatar{
+            width: 100%;
+            margin-bottom: 8.52rem; 
+            text-align: center;
+        }
+    }
+.info-blocks{
+    width: 90%;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;}
+
+
+    .block{
+        display: flex;
+    
+        background-color: rgba(56, 62, 69, 0.44);
+        width: 29%;
+        height: 7.5rem;
+
+    }
+
+
+
+
+
+
+
