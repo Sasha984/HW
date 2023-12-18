@@ -125,23 +125,18 @@ body{
         .avatar{
             width: 100%; 
             text-align: center;
+            margin-bottom: 8.52rem;
         }
-    
-    
-.blocks{
-    margin-top: 8.52rem;
-    
+    }
+.info-bloks{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 
-
-
-    .block{
-        display: flex;
+       .blok{
         background-color: rgba(56, 62, 69, 0.44);
-        width: 29%;
-        height: 7.5rem;
+        display: flex;
+        
+       .style-text-info{
         color: #FFF;
         font-family: var(--first-font);
         font-size: 1rem;
@@ -149,25 +144,23 @@ body{
         font-weight: 700;
         line-height: 193.023%;
         text-transform: capitalize;
-    }
-    
-        .text-block{
+       }
+
+        .bold-text{
             color: #FFB742;
             text-align: center;
             font-family: var(--first-font);
             font-size: 2rem;
             font-style: normal;
             font-weight: 700;
-            line-height: 126.023%; 
+            line-height: 126.023%;
             text-transform: capitalize;
-        
-
-
+        }
+       
     }
-}
-
 
 }
+
 
 
 
