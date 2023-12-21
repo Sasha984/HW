@@ -140,7 +140,7 @@ body{
         background-color: rgba(56, 62, 69, 0.44);
         display: flex;
         flex-direction: row;
-        width: 22rem;
+        width: 30%;
         height: 7.5rem;
         border-radius: 10px;
         align-items: center;
@@ -172,26 +172,14 @@ body{
             text-transform: capitalize;
         }
 
-        .img-cover-emblem{
-            position: relative;
-            z-index: 2;
-            right: 57px;
+        .img-cover{
+           width: 4rem;
+           height: 4rem;
+            border-radius: 4.625rem;
+            background: #FFF;
+            padding: 1rem;
         }
-        .img-cover-mark{
-            position: relative;
-            z-index: 2;
-            right: 58px;
-        }
-        .img-cover-happy{
-            position: relative;
-            z-index: 2;
-            right: 70px;
-        }
-.ellipse{
-    position: relative;
-    z-index: 1;
 }
-
 .arrow{
     background: rgba(56, 62, 69, 0);
     border: none;
@@ -205,7 +193,6 @@ body{
         color: #212529;
      }
      }
-}
 .about-me{
     padding-right: 3.19rem;
     margin-top: 13.83rem;
@@ -268,7 +255,7 @@ body{
 }
 }
 .my-scills{
-    padding-right: 3.19rem;
+    padding-right: 3.75rem;
     padding-left: 3.19rem;
     margin-bottom: 8.54rem;
     display: flex;
@@ -330,9 +317,8 @@ flex-direction: column;
 }
 }
 .l-block-my-scills{
-    padding-left: 6.06rem;
+    margin-left: 6.06rem;
     display: flex;
-    flex-direction: column;
     gap: 1rem;
 }
 .icons{
@@ -342,15 +328,13 @@ flex-direction: column;
     background: #383E45;
     padding: 1rem;
 }
-.icons-f-row{
+.icons-row{
     height: 5rem;
     display: flex;
     gap: 1rem;
-}
-.icons-l-row{
-    display: flex;
-    gap: 1rem;
-    height: 5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 }
 .my-works{
@@ -639,13 +623,53 @@ footer{
         line-height: 2.27638rem;
     }
    }
-   
+
 @media (max-width: 1428px){
+    .my-scills{
+    .f-block-my-scills{
     .my-scills-name{
         width: 24%;
     }
 }
-
-
-
-
+}
+}
+@media(max-width:1308px){
+    .my-scills{
+        .f-block-my-scills{
+        .my-scills-name{
+            width: 33%;
+        }
+    }
+    }
+    .cover{
+        .info-blocks{
+            .block{
+.style-text-info{
+font-size: 0.5rem;
+    .bold-text{
+font-size: 1rem;
+    }
+}
+            }
+        }
+    }
+}
+@media(max-width:1200px){
+    .about-me{
+        .about-me-info{
+            .about-me-name{
+                width: 25%;
+            }
+        }
+    }
+    .my-works{
+        .my-works-name{
+            width: 19%;
+        }
+    }
+.testimonials{
+    .test-name{
+        width: 18%;
+    }
+}
+}
