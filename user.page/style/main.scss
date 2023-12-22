@@ -30,7 +30,10 @@ body{
         align-items: flex-start;
         gap: 0.3125rem;
 }
-    .search a{
+    .search{
+        display: flex;
+        align-items: center;
+    } a{
         color: #FFF;
         font-family: var(--second-font);
         font-size: 1.125rem;
@@ -133,8 +136,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    
        .block{
         padding: 1.56rem 1.87rem;
         background-color: rgba(56, 62, 69, 0.44);
@@ -199,6 +200,7 @@ body{
     margin-bottom: 15.69rem;
     .about-me-img{
         float: left;
+        min-width: 250px;
     }
     .about-me-info{
         display: flex;
@@ -215,7 +217,7 @@ body{
     border-radius: 3.125rem;
     background: rgba(255, 255, 255, 0.08);
     margin-bottom: 0.64rem;
-    width: 17%;
+    width: 150px;
     text-align: center;
 }
 .about-me-title{
@@ -264,8 +266,6 @@ body{
 .f-block-my-scills{
 display: flex;
 flex-direction: column;
-
-
 .my-scills-name{
     color: #FFB742;
     font-family: var(--second-font);
@@ -277,7 +277,7 @@ flex-direction: column;
     border-radius: 3.125rem;
     background: rgba(255, 255, 255, 0.08);
     margin-bottom: 0.03rem;
-    width: 19%;
+    width: 150px;
     text-align: center;
 }
 .my-scills-title{
@@ -328,6 +328,12 @@ flex-direction: column;
     background: #383E45;
     padding: 1rem;
 }
+.icons:hover{
+    border-radius: 0.625rem;
+    border: 1px solid #000;
+    background: rgba(255, 183, 66, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+}
 .icons-row{
     height: 5rem;
     display: flex;
@@ -340,8 +346,6 @@ flex-direction: column;
 .my-works{
     padding-left: 6.44rem;
     padding-right: 6.44rem;
-    
-    
 .my-works-name{
     margin: 0 auto;
     color: #FFB742;
@@ -354,7 +358,7 @@ flex-direction: column;
     border-radius: 3.125rem;
     background: rgba(255, 255, 255, 0.08);
     margin-bottom: 0.03rem;
-    width: 13%;
+    width: 150px;
     text-align: center;
 }
 .my-works-title{
@@ -371,6 +375,13 @@ flex-direction: column;
 .categories {
     text-align: center;
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 8rem;
+    padding-right: 8rem;
     a{
     color: #FFF;
     font-family: var(--second-font);
@@ -383,28 +394,18 @@ flex-direction: column;
     padding-right: 1.25rem;
     }
 }
-.categories a:first-child{
-    margin-right: 1.5rem;
-}
-.categories a:nth-child(2){
-    margin-right: 1.5rem;
-}
-.categories a:nth-child(3){
-    margin-right: 1.5rem;
-}
-.categories a:last-child{
-    margin-right: 0rem;
-}
+
 .categories a:hover{
     border-radius: 0.1875rem;
     background: #FFB742;
     color: #212529;
 }
 .columns{ 
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-margin-bottom: 8.47rem;
+    margin-top: 3.31rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 8.47rem;
      .column-1{
         width: 27%;
         display: flex;
@@ -445,7 +446,7 @@ margin-bottom: 8.47rem;
         border-radius: 3.125rem;
         background: rgba(255, 255, 255, 0.08);
         margin-bottom: 0.52rem;
-        width: 13%;
+        width: 165px;
         text-align: center;
     }
     .test-title{
@@ -520,7 +521,6 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
         .f-column-1{
         display: flex;
         flex-direction: column;
@@ -608,46 +608,31 @@ footer{
     }
     .f-column-2 a:hover{
         color: #FFB742;
-        font-family: var(--fourth-font);
-        font-size: 1.12431rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 2.27638rem;
     }
     .f-column-3 a:hover{
         color: #FFB742;
-        font-family: var(--fourth-font);
-        font-size: 1.12431rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 2.27638rem;
     }
    }
 
 @media (max-width: 1428px){
-    .my-scills{
-    .f-block-my-scills{
-    .my-scills-name{
-        width: 24%;
-    }
-}
-}
-}
-@media(max-width:1308px){
-    .my-scills{
-        .f-block-my-scills{
-        .my-scills-name{
-            width: 33%;
+.testimonials{
+        .comments{
+        .comment{
+            .user-name{
+                font-size: 20px;
+            }
+        }
         }
     }
-    }
+}
+@media(max-width:1319px){
     .cover{
         .info-blocks{
             .block{
 .style-text-info{
-font-size: 0.5rem;
+font-size: 14px;
     .bold-text{
-font-size: 1rem;
+font-size: 29px;
     }
 }
             }
@@ -655,21 +640,398 @@ font-size: 1rem;
     }
 }
 @media(max-width:1200px){
-    .about-me{
-        .about-me-info{
-            .about-me-name{
-                width: 25%;
+        .my-works{
+        .categories{
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+}
+}
+@media(max-width:1183px){
+    .my-works{
+        .categories{
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+    .cover{
+        .info-blocks{
+            .block{
+.style-text-info{
+font-size: 12px;
+    .bold-text{
+font-size: 25px;
+    }
+}
+.img-cover{
+    width: 50px;
+    height: 50px;;
+    padding: 5px;
+ }
             }
         }
     }
-    .my-works{
-        .my-works-name{
-            width: 19%;
+}
+@media(max-width:1045px){
+    .cover{
+        .info-blocks{
+            .block{
+                padding: 2px 2px;
+            }
         }
     }
-.testimonials{
-    .test-name{
-        width: 18%;
+   footer{
+            .f-column-1{
+        .name{
+            font-size: 21px;
+        }
+        .discription{
+            font-size: 15px;
+        }
     }
+        .f-column-2{
+                a{
+                    font-size: 15px;
+                }
+                .f-title-2{
+                    font-size: 20px;
+            }
+           }
+           .f-column-3{
+            a{
+                font-size: 15px;
+            }
+            .f-title-3{
+                font-size: 20px;
+        }
+       }
+       .f-column-4{
+        .f-title-4{
+            font-size: 20px;
+        }
+        .news{
+            font-size: 15px;
+        }
+       }
+        }
+    }
+@media(max-width:976px){
+        .header-wrapper{
+.button-h{
+    padding: 9px;
+}
+        }
+        .my-works{
+            .categories{
+                a{
+        font-size: 14px;
+        padding-left: 2px;
+        padding-right: 2px;
+                }
+            }
+        }
+        .testimonials{
+        .comments{
+            padding-left: 2rem;
+            padding-right: 2rem;
+    }
+}
+    }
+@media(max-width:811px){
+    .my-works{
+        .categories{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+        .cover{
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .about-me{
+            .about-me-img{
+                margin-top: 100px;
+ }
+        }
+    }
+    @media(max-width:764px){
+        .header-wrapper{
+            .search{
+                a{
+                 font-size: 16px;
+                }
+            }
+            .button-h{
+                padding: 7px;
+            }
+        }
+        .cover{
+            .item{
+                font-size: 33px;
+            }
+            .style-text{
+                font-size: 22px;
+            }
+        }
+        .about-me{
+            .about-me-info{
+                .about-me-title{
+                    font-size: 33px;
+                }
+                .about-me-text{
+                    font-size: 17px;
+                }
+            }
+        }
+        .my-scills{
+             .f-block-my-scills{
+                 .my-scills-title{
+                  font-size: 33px;
+                 }
+                 .my-scills-text{
+                    font-size: 17px;
+                 }
+                }
+            }
+            .my-works{
+                .my-works-title{
+                    font-size: 40px;
+                }
+            }
+        .testimonials{
+
+         .comments{
+
+          .comment{
+             .stars{
+                 font-size: 14px;
+             }
+             .comment-text{
+           font-size: 15px;
+           line-height: 1.125rem;
+             }
+             .user-name{
+                font-size: 14px;
+            }
+             }
+             .user-work{
+                font-size: 15px;
+                line-height: 1.125rem;
+             }
+    }
+}
+.my-scills{
+    .icons{
+        width: 3rem;
+        height: 3rem;
+        padding: 8px;
+    }
+}
+        }
+@media(max-width:691px){
+    .cover{
+        .info-blocks{
+            .block{
+.style-text-info{
+    font-size: 10px;
+}
+    .bold-text{
+        font-size: 23px;
+    }
+}
+.img-cover{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+ }
+            }
+    }
+}
+.my-works{
+     .categories{
+
+     a{
+        font-size: 12px;
+     }
+}
+}
+.testimonials{
+
+    .comments{
+
+     .comment{
+        .stars{
+            font-size: 12px;
+        }
+        }
+}
+}
+@media(max-width:662px){
+    .header-wrapper{
+        flex-direction: column;
+        .logo{
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 25px;
+  }
+        .search{
+            justify-content: center;
+            margin-bottom: 25px;
+        } 
+    }
+    .cover{
+        .info-blocks{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+           .block{
+            padding: 1.56rem 1.87rem;
+            width: 100%;
+            .style-text-info{
+                font-size: 20px;
+               }
+        
+                .bold-text{
+                    font-size: 35px;
+                }
+           }
+            
+            .block:first-child{
+                margin-bottom: 15px;
+            }
+            .block:nth-child(2){
+                margin-bottom: 15px;
+            }  
+    }
+}
+.about-me{
+    .about-me-img{
+        margin-bottom: 214px;
+    }
+    .about-me-info{
+        .about-me-title{
+            font-size: 29px;
+        }
+        .about-me-text{
+            font-size: 14px; 
+            margin-bottom: 2.4rem;
+        }
+        .about-me-button{
+            width: 8.223rem;
+            padding: 7px;
+            border-radius: 2.125rem;
+            font-size: 20px;
+        }
+    }
+}
+.my-scills{
+    padding-right: 2.75rem;
+    padding-left: 2.19rem;
+    .f-block-my-scills{
+       .my-scills-title{
+        font-size: 29px;
+       }
+       .my-scills-text{
+        line-height: 25px;
+        margin-bottom: 1.95rem;
+       }
+       .my-scills-button{
+        width: 8.223rem;
+        padding: 7px;
+        border-radius: 2.125rem;
+        font-size: 20px;
+       }
+    }
+    .l-block-my-scills{
+        margin-left: 2.06rem;
+    }
+}
+.my-works{
+    padding-left: 1.44rem;
+    padding-right: 1.44rem;
+}
+.testimonials{
+    .test-title{
+        margin-bottom: 3.64rem;
+    }
+    .comments{
+        margin-bottom: 6.82rem;
+        display: block;
+        .comment{
+            width: 100%;
+        }
+        .comment:first-child{
+            margin-bottom: 15px;
+        }
+        .comment:nth-child(2){
+            margin-bottom: 15px;
+        }
+    }
+}
+footer{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4.25rem;
+    padding-bottom: 2.59rem;
+}
+@media(max-width:621px){
+    .about-me{
+        .about-me-img{
+            margin-top: 190px;
+}
+}
+}
+@media(max-width:544px){
+    .about-me{
+        text-align: center;
+        padding-left: 3.19rem;
+        .about-me-img{
+            display: none;
+        }
+        .about-me-info{
+            .about-me-name{
+                margin: 0 auto;
+            }
+            .about-me-button{
+                margin: 0 auto;
+            }
+        }
+    }
+}
+@media(max-width:430px){
+    .cover{
+        .info-blocks{
+            .block{
+                .style-text-info{
+                    font-size: 15px;
+                    .bold-text{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+    .my-scills{
+        flex-direction: column;
+        .f-block-my-scills{
+            text-align: center;
+            .my-scills-name{
+                margin: 0 auto;}
+                .my-scills-button{
+                    margin: 0 auto;
+                }}
+        .l-block-my-scills{
+            margin-top: 30px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+}
+}
+@media(max-width:394px){
+.header-wrapper{
+    .search{
+        flex-wrap: wrap;
+    }
+}
 }
 }
