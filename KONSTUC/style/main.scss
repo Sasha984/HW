@@ -7,12 +7,12 @@ html{
 body{
     margin: 0 auto;   
 }
-main{
+.container{
     margin: 0 auto;
     width: 65%;
    .cover{
     height: 95vh;
-    background: url(images/bg.png), lightgray 0px 0px / 100% 100% no-repeat;
+    background-image: url(img/bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
