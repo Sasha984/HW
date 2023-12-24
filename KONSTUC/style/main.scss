@@ -7,14 +7,11 @@ html{
 body{
     margin: 0 auto;   
 }
-.container{
-    margin: 0 auto;
-    width: 65%;
-   .cover{
+
+.cover{
     height: 95vh;
     background-image: url(img/bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-}
 }
