@@ -12,15 +12,18 @@ body{
     margin: 0 auto;   
 }
 .cover-container{
-    background: url(img/bg.png);
+    background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 .cover{
 
     .logo{
-        
+       padding-top: 2.56rem;
+       max-width: 100px;
+       min-width: 100px;
+       margin: 0 auto;
+       margin-bottom: 19.81rem;
     }
     .first-text{
         color: #FFF;
@@ -40,6 +43,7 @@ body{
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        margin-bottom: 13.81rem;
     }
     .third-text{
         color: #FFF;
@@ -50,6 +54,383 @@ body{
         font-weight: 600;
         line-height: normal;
         letter-spacing: 0.23125rem;
+        padding-bottom: 4.44rem;
     }
-    
 }
+header{
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.44rem;
+    nav{
+        display: flex;
+        gap: 2.44rem;
+       a{
+        color: #48555B;
+        text-align: center;
+        font-family: var(--main-font);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.091px;
+        text-decoration: none;
+       }
+}
+nav a:hover{
+    color: #00A4E5;
+   }
+}
+.story{
+    background-color: #FFF;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 3.56rem;
+    margin-bottom: 7.44rem;
+    .block-name-1{
+        color: #48555B;
+        text-align: center;
+        font-family: var(--main-font);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.14413rem;   
+        padding-bottom: 0.62rem;
+    }
+    .line{
+        width: 50px;
+        border-top: 2px solid ;
+        color: #00A4E5;
+        margin: 0 auto;
+    }
+    .story-content{
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: (42% 48%);
+        column-gap: 78px;
+    .block-text{
+    .story-text-bold{
+        color: #48555B;
+        font-family: var(--main-font);
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.01175rem;
+        margin-bottom: 1.87rem;
+        span{
+            color: #16ACE8;
+            font-family: var(--main-font);
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.01063rem;            
+        }
+    }
+    .story-text{
+        color: #48555B;
+        font-family: OpenSans;
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4375rem;
+        letter-spacing: 0.01175rem;
+    }}
+    .pics{
+        display: grid;
+        grid-template-columns: (33.3% 33.3% 33.3%);
+        column-gap: 20px;
+        position: relative;
+        z-index: 1;
+        p{
+            color: #FFF;
+            font-family: var(--main-font);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 29px;
+            letter-spacing: 0.188px;
+            position: relative;
+            z-index: 2;
+            bottom: 200px;
+            left: 14px;
+        }
+    }
+}
+}
+.capabilities{
+    background-color: #FFF;
+display: grid;
+grid-template-columns: (21% 62%);
+column-gap: 9.69rem;
+padding-left: 15rem;
+padding-right: 15rem;
+margin-bottom: 4.87rem;
+.left-block{
+    .block-name-2{
+        color: #48555B;
+        font-family: var(--main-font);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.14413rem;
+        padding-bottom: 0.62rem;
+    }
+     .line{
+      width: 50px;
+      border-top: 2px solid ;
+      color: #00A4E5;
+}
+}
+.right-block{
+    display: grid;
+    grid-template-columns: (69% 25%);
+    column-gap: 1.97rem;
+      .capabilities-text{
+      color: #48555B;
+      font-family: var(--main-font);
+      font-size: 0.6875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.1875rem; 
+      letter-spacing: 0.0125rem;
+}
+      button{
+        color: #FFF;
+        text-align: center;
+        font-family: var(--main-font);
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.03125rem;
+        background: #00A4E5;
+        border-style: none;
+        width: 150px;
+}
+}
+}
+.info-blocks{
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-bottom: 7.19rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.69rem;
+    .block{
+        border: 1px solid #E6E6E6;
+        background: #FFF;
+        width: 31%;
+        padding-top: 2.37rem;
+        padding-left: 1.38rem;
+        padding-right: 2.44rem;
+        padding-bottom: 1.44rem;
+        .block-img{
+           margin-bottom: 1.56rem;
+        }
+        .block-name{
+            color: #48555B;
+            font-family: var(--main-font);
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.5rem;
+            letter-spacing: 0.02669rem;
+            margin-bottom: 0.81rem;
+        }
+        .block-text{
+            color: #48555B;
+            font-family: var(--main-font);
+            font-size: 0.8125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.4375rem;
+            letter-spacing: 0.01175rem;
+        }
+    }
+}
+.propose{
+    background-image: url(../img/bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 7.5rem;
+    padding-bottom: 14.44rem;
+    .propose-text{
+        text-align: center;
+        color: #48555B;
+        font-family: var(--main-font);
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.25rem;
+        letter-spacing: 0.00938rem;
+        margin-bottom: 2.19rem;
+    }
+    button{
+        margin: 0 auto;
+        color: #FFF;
+        text-align: center;
+        font-family: var(--main-font);
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.03125rem; 
+        background: #00A4E5;
+        border-style: none;
+        padding: 0.69rem 1.69rem;
+    }
+}
+.sighn-up{
+    background: #171819;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.87rem;
+    padding-bottom: 1.81rem;
+    gap: 4.38rem;
+    .sighn-up-text{
+        color: #FFF;
+        font-family: var(--main-font);
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.05288rem;
+        display: flex;
+        align-self: flex-end;
+    }
+    .input{
+        display: flex;
+        flex-direction: row;
+        .email{
+            color: #48555B;
+            font-family: var(--main-font);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.00438rem;          
+            background: #FFF;
+            border: 1px solid #979797;
+            padding-top: 0.69rem;
+            padding-bottom: 0.69rem;
+            padding-left: 1rem;
+            width: 15rem;
+            height: 2.5rem;
+        }
+        .button-email{
+            color: #FFF;
+            font-family: var(--main-font);
+            font-size: 0.8125rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.03125rem;     
+            background: #00A4E5;
+            border-style: none;
+            padding: 0.69rem 3.03rem;
+        }
+    }
+}
+footer{
+        background: #141A20;
+        padding-top: 2.62rem;
+        padding-left: 15.56rem;
+        padding-bottom: 3.12rem;
+        padding-right: 17.3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      .company{ 
+          display: flex;
+          flex-direction: column;
+          width: 17%;
+        .company-name{
+                color: #FFF;
+                font-family: var(--main-font);
+                font-size: 0.6875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.05288rem;     
+                margin-bottom: 1.19rem; 
+            }
+            .company-text{
+                margin-top: 0.94rem;
+                color: #FFF;
+                font-family: var(--main-font);
+                font-size: 0.6875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.1875rem;
+                letter-spacing: 0.05313rem;
+            }
+        }
+        .links{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            .column{
+                display: flex;
+                flex-direction: column;
+                .links-name{
+                    color: #FFF;
+                    font-family: var(--main-font);
+                    font-size: 0.6875rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.05288rem;
+                }
+                 a{
+                 text-decoration: none;
+                 color: #FFF;
+                 font-family: var(--main-font);
+                 font-size: 0.6875rem;
+                 font-style: normal;
+                 font-weight: 600;
+                 line-height: 1.5625rem;
+                 letter-spacing: 0.05288rem;                
+                 }
+            }
+        }
+        .contacts{
+            .contacts-name{
+                color: #FFF;
+                font-family: var(--main-font);
+                font-size: 0.6875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.05288rem; 
+                margin-bottom: 0.94rem;               
+            }
+            .contacts-text{
+                color: #FFF;
+                font-family: var(--main-font);
+                font-size: 0.6875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1rem;
+                letter-spacing: 0.05288rem;
+            }
+        }
+        .social{
+            display: flex;
+            flex-direction: row;
+            gap: 1.56rem;
+        }
+    }
+
+    
