@@ -15,6 +15,7 @@ body{
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .cover{
 
@@ -87,8 +88,8 @@ nav a:hover{
 }
 .story{
     background-color: #FFF;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    width: 65%;
+    margin: 0 auto;
     padding-top: 3.56rem;
     margin-bottom: 7.44rem;
     .block-name-1{
@@ -111,7 +112,7 @@ nav a:hover{
     .story-content{
         margin-top: 4rem;
         display: grid;
-        grid-template-columns: (42% 48%);
+        grid-template-columns: (1fr 1fr);
         column-gap: 78px;
     .block-text{
     .story-text-bold{
@@ -144,10 +145,11 @@ nav a:hover{
     }}
     .pics{
         display: grid;
-        grid-template-columns: (33.3% 33.3% 33.3%);
+        grid-template-columns: 140px 140px 140px;
         column-gap: 20px;
         position: relative;
         z-index: 1;
+        align-items: center;
         p{
             color: #FFF;
             font-family: var(--main-font);
@@ -166,12 +168,11 @@ nav a:hover{
 }
 .capabilities{
     background-color: #FFF;
-display: grid;
-grid-template-columns: (21% 62%);
-column-gap: 9.69rem;
-padding-left: 15rem;
-padding-right: 15rem;
-margin-bottom: 4.87rem;
+    display: grid;
+    grid-template-columns: (1fr 2fr);
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 4.87rem;
 .left-block{
     .block-name-2{
         color: #48555B;
@@ -213,13 +214,13 @@ margin-bottom: 4.87rem;
         letter-spacing: 0.03125rem;
         background: #00A4E5;
         border-style: none;
-        width: 150px;
+        height: 40px;
 }
 }
 }
 .info-blocks{
-    padding-left: 15rem;
-    padding-right: 15rem;
+    width: 65%;
+    margin: 0 auto;
     padding-bottom: 7.19rem;
     display: flex;
     flex-direction: row;
@@ -308,7 +309,7 @@ margin-bottom: 4.87rem;
         line-height: normal;
         letter-spacing: 0.05288rem;
         display: flex;
-        align-self: flex-end;
+        align-items: flex-end;
     }
     .input{
         display: flex;
@@ -345,13 +346,14 @@ margin-bottom: 4.87rem;
 }
 footer{
         background: #141A20;
-        padding-top: 2.62rem;
-        padding-left: 15.56rem;
-        padding-bottom: 3.12rem;
-        padding-right: 17.3rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        .footer-main{
+            padding-top: 2.62rem;
+            padding-bottom: 3.12rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 70%;
+            margin: 0 auto;
       .company{ 
           display: flex;
           flex-direction: column;
@@ -432,5 +434,171 @@ footer{
             gap: 1.56rem;
         }
     }
+    }
+@media(max-width:1115px){
+        .story{
+            .story-content{
+                display: block;
+                .block-text{
+                    text-align: center;
+                }
+                .pics{
+                    justify-content: center;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+@media(max-width:1040px){
+    header{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+        .capabilities{
+            .right-block{
+                column-gap: 0.97rem;
+            }
+        }
+}
+@media(max-width:970px){
+    .capabilities{
+        display: block;
+        text-align: center;
+        .line{
+            margin: 0 auto;
+        }
+        .right-block{
+            margin-top: 1rem;
+        }
+    }
+}
+@media(max-width:920px){
+    .cover{
+        .first-text{
+            font-size: 2rem;
+        }
+        .second-text{
+            font-size: 14px;
+        }
+    }
+    footer{
+        .footer-main{
+            width: 80%;
+        }
+    }
+}
+@media(max-width:830px){
+    header{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .info-blocks{
+        flex-direction: column;
+        .block{
+            width: 100%;
+            text-align: center;
+}
+    }
+    footer{
+        .footer-main{
+            flex-direction: column;
+            .company{
+                width: 100%;
+                text-align: center;
+            }
+            .links{
+                margin-top: 2rem;
+                text-align: center;
+                justify-content: center;
+            }
+            .contacts{
+                margin-top: 2rem;
+                text-align: center;
+            }
+            .social{
+                justify-content: center ;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+@media(max-width:700px){
+    .sighn-up{
+        gap: 2rem;
+        .sighn-up-text{
+            font-size: 15x;
+        }
+        .input{
+            .email{
+                width: 13rem;
+                height: 2rem;
+            }
+            .button-email{
+                font-size: 13px;
+                padding: 0px;
+            }
+        }
+    }
+}
+@media(max-width:670px){
+    header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media(max-width:550px){
+    .sighn-up{
+        flex-direction: column;
+        justify-content: center;
+        .sighn-up-text{
+            justify-content: center;
+        }
+        .input{
+            justify-content: center;
+        }
+    }
+}
+@media(max-width:540px){
+    header{
+        nav{
+            gap: 1rem;
+        }
+    }
+}
+@media(max-width:500px){
+    .capabilities{
+        .right-block{
+    display: flex;
+    align-items: center;
+        }
+    }
+}
+@media(max-width:437px){
+    header{
+      flex-direction: column;
+      .logo-black{
+        text-align: center;
+      }
+        nav{
+            margin-top: 10px;
+            justify-content: center;
+    }
+}
+    .story{
+        .story-content{
+            .pics{
+         display: flex;
+         flex-wrap: wrap;
+            }
+        }
+    }
+    .capabilities{
+        .right-block{
+            flex-direction: column;
+            button{
+                margin-top: 10px;
+            }
 
-    
+        }
+    }
+}
