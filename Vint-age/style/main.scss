@@ -9,14 +9,14 @@ body{
     font-family: 'Philosopher';
 }
 .cover-container{
-    background: rgba(0, 0, 0, 0.60) url(../images/bg.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.60) 31.06%, #000 160%), url(../images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
+    background-position: center;
 header{
-    margin: 0 auto;
+    padding-left: 8.88rem;
+    padding-right: 8.88rem;
     padding-top: 40px;
-    width: 84%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,35 +63,236 @@ header{
         }
 }
 .cover-center{
+    display: flex;
+    flex-direction: row;
+    gap: 11rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    padding-bottom: 22.88rem;
     .big-text{
         color: #FFF;
         text-align: right;
         font-size: 5rem;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;  
+        line-height: normal; 
             span{
-                color: #F90
+                color: #F90;
                 font-size: 5rem;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;            
             }
    }
+.cover-text{
+    display: flex;
+    flex-direction: column;
     .quote{
         color: #FFF;
         font-size: 2.125rem;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;   
-        .span{
+        line-height: normal;  
+
+    }
+        .author{
             color: #F90;
             font-size: 2.125rem;
             font-style: normal;
             font-weight: 400;
             line-height: normal;  
-            text-align: right;                   
+            text-align: right;                  
         }    
     }
+}
+}
+.story{
+    padding-top: 7.5rem;
+    padding-left: 8.88rem;
+    padding-right: 8.88rem;
+    padding-bottom: 11.81rem;
+    background: #F6FDEE;
+    .block-name-1{
+        color: #000;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;  
+        margin-bottom: 4.38rem; 
+        span{
+            color: #F90;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;           
+        }     
+    }
+    .story-content{
+    display: grid;
+    grid-template-columns: (28% 28% 28%);
+    align-items: end;
+    column-gap: 4.12rem;
+    .story-name{
+        color: #F90;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;  
+        margin-top: 1.87rem;     
+        margin-bottom: 1.19rem; 
+    }
+    .story-text{
+        margin-bottom: 1.75rem;
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;   
+        width: 300px;     
+    }
+    .story-name-center{
+        color: #F90;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;       
+        margin-bottom: 1.19rem;  
+        text-align: center;       
+    }
+    .story-text-center{
+        margin-bottom: 1.75rem;
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;   
+        width: 350px; 
+        text-align: center;
+    }
+}
+}
+.collection{
+    background: #FFF;
+    height: 700px;
+    .line-1{
+        width: 100%; 
+        border: 1px solid #F90;     
+        position: relative;
+        z-index: 1;
+        margin-top: 16.61rem;
+    }
+    .line-2{
+        width: 100%; 
+        border: 1px solid #F90;     
+        position: relative;
+        z-index: 1;
+        margin-top: 25.58rem;
+    }
+    .collection-main{
+        padding-top: 7.5rem;
+        padding-left: 3.88rem;
+        padding-right: 3.88rem; 
+        position: relative;   
+        z-index: 2;   
+        bottom: 750px;
+    .block-name-2{
+        color: #000;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;  
+        margin-bottom: 8.12rem;
+        span{
+            color: #F90;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;            
+        }      
+    }
+    .hotel-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: 1.88rem; 
+    .hotel{
+        height: 500px;
+        img{
+            position: relative;
+            z-index: 2;         
+        }
+        .image-all{
+            background: rgba(0, 0, 0, 0.40);
+            position: relative;
+            z-index: 3;
+            width: 320px;
+            height: 500px;
+            bottom: 502px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            padding-left: 1.25rem;   
+            padding-bottom: 4.38rem;  
+            padding-right: 2.25rem;
 
+            .city{
+                color: #FFF;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border-bottom: 2px solid yellow;
+                width: 94px;
+                margin-bottom: 1.25rem;
+            }
+            .city-text{
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;    
+                width: 280px;         
+            }
+        }
+    }
+
+
+}
+}
+.button-hotel{
+    text-align: right;
+    padding-bottom: 3rem;
+      button{
+         border-style: none;
+         background: #FFF;
+         color: #000;
+         font-size: 1.5rem;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal; 
+         border-bottom: 4px solid yellow;  
+}
+}
+}
+.vintage{
+    background: url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .block-name-3{
+        color: #000;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-left: 8.83rem;
+        span{
+            color: #F90;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
 }
