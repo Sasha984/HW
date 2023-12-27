@@ -6,9 +6,92 @@ html{
 }
 body{
     margin: 0 auto;
+    font-family: 'Philosopher';
 }
 .cover-container{
-    background-image: url(images/bg.png);
+    background: rgba(0, 0, 0, 0.60) url(../images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+header{
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 84%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 18.88rem;
+     .name{
+        color: #FFF;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+     span{
+        color: #F90;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+     }
+    }
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        a{
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
+    .navigation a:hover{
+        color: #F90;
+    }
+        .propose{
+            display: flex;
+            align-items: center;
+            color: #F90;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;            
+        }
+}
+.cover-center{
+    .big-text{
+        color: #FFF;
+        text-align: right;
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;  
+            span{
+                color: #F90
+                font-size: 5rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;            
+            }
+   }
+    .quote{
+        color: #FFF;
+        font-size: 2.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;   
+        .span{
+            color: #F90;
+            font-size: 2.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;  
+            text-align: right;                   
+        }    
+    }
+
 }
