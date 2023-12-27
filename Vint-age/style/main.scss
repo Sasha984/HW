@@ -280,13 +280,19 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-left: 3.88rem;
+    padding-right: 3.88rem; 
+    padding-top: 7rem;
     .block-name-3{
+        position: relative;   
+        z-index: 10; 
         color: #000;
         font-size: 2.5rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        padding-left: 8.83rem;
+        margin-bottom: 5.44rem;
+        
         span{
             color: #F90;
             font-size: 2.5rem;
@@ -294,5 +300,169 @@ header{
             font-weight: 700;
             line-height: normal;
         }
+    }
+    .vintage-name{
+        position: relative;   
+        z-index: 10; 
+        color: #000;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;   
+        margin-bottom: 1.48rem;
+        span{
+            color: #F90;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;            
+        }     
+    }
+    .vintage-block{
+    position: relative;   
+    z-index: 10; 
+    display: flex;   
+    flex-direction: column;   
+    width: 40%;
+    margin-left: 50%;
+    .vintage-text{
+        position: relative;   
+        z-index: 10; 
+        color: #000;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;      
+        margin-bottom: 1.19rem;
+    }
+    .vintage-button{
+        position: relative;   
+        z-index: 10; 
+        display: flex;
+        justify-content: flex-end;
+       
+        button{
+            background: none;          
+         position: relative;   
+         z-index: 10;    
+        border-style: none;
+        color: #000;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+        border-bottom: 4px solid yellow;          
+    }
+}
+    }
+    .live-pic{
+        position: relative;
+        z-index: 1;
+        animation-name: live-pic;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+}
+.diversity{
+    background: #FFF;
+    height: 700px;
+    .line-1{
+        width: 100%; 
+        border: 1px solid #F90;     
+        position: relative;
+        z-index: 1;
+        margin-top: 16.61rem;
+    }
+    .line-2{
+        width: 100%; 
+        border: 1px solid #F90;     
+        position: relative;
+        z-index: 1;
+        margin-top: 25.58rem;}
+        .diversity-main{
+            padding-top: 7.5rem;
+            padding-left: 10.3rem;  
+            position: relative;   
+            z-index: 2;   
+            bottom: 650px;   
+        .diversity-text{
+            color: #000;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 3.13rem;    
+            span{
+                color: #F90;
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;              
+            }       
+        }
+        .photos{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            .column-1{
+                display: grid;
+                grid-template-rows: (2fr 1fr 1fr);
+            }
+            .column-3{
+                display: grid;
+                grid-template-rows: (2fr 1fr 1fr);    
+            }
+        }
+}
+}
+
+
+@keyframes live-pic{
+    0%{
+    bottom: 50%;
+    left: 100%;
+    }
+    10%{
+    bottom:50%;
+    left: 90%;
+    }
+    20%{
+    bottom:40%;
+    left: 80%;
+    }
+    30%{
+    bottom: 60%;
+     left: 70%;
+    }
+    40%{
+     bottom: 30%;
+     left: 60%;
+    }
+    50%{
+      bottom: 50%;
+      left: 50%;
+    }
+    60%{
+        bottom: 20%;
+        left: 40%;
+    }
+    70%{
+        bottom: 50%;
+        left: 30%;
+    }
+    80%{
+        bottom: 30%;
+        left: 20%;
+    }
+    90%{
+        bottom:60%;
+        left: 10%;
+    }
+    95%{
+        bottom: 40%;
+        left: 0%;
+    }
+    100%{
+        bottom:50%;
+        left: -100%;
     }
 }
