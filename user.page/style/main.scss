@@ -328,20 +328,14 @@ flex-direction: column;
     border-radius: 0.625rem;
     background: #383E45;
     padding: 1rem;
+    margin-top: 20px;
+  margin-right: 20px;
 }
 .icons:hover{
     border-radius: 0.625rem;
     border: 1px solid #000;
     background: rgba(255, 183, 66, 0.50);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
-}
-.icons-row{
-    height: 5rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
 }
 }
 .my-works{
