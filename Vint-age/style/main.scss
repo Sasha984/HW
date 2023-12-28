@@ -129,7 +129,7 @@ header{
     }
     .story-content{
     display: grid;
-    grid-template-columns: (28% 28% 28%);
+    grid-template-columns: (30% 30% 30%);
     align-items: end;
     column-gap: 4.12rem;
     .story-name{
@@ -170,6 +170,21 @@ header{
         text-align: center;
     }
 }
+   .button-story{
+    margin-top: 2.19rem;
+    display: flex;
+    justify-content: flex-end;
+    button{ 
+     background: none;   
+    border-style: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    border-bottom: 4px solid yellow;
+    }
+   }
 }
 .collection{
     background: #FFF;
@@ -265,7 +280,7 @@ header{
     padding-bottom: 3rem;
       button{
          border-style: none;
-         background: #FFF;
+         background: none;
          color: #000;
          font-size: 1.5rem;
          font-style: normal;
@@ -283,6 +298,7 @@ header{
     padding-left: 3.88rem;
     padding-right: 3.88rem; 
     padding-top: 7rem;
+    overflow: hidden;
     .block-name-3{
         position: relative;   
         z-index: 10; 
@@ -342,9 +358,9 @@ header{
         justify-content: flex-end;
        
         button{
-            background: none;          
-         position: relative;   
-         z-index: 10;    
+        background: none;          
+        position: relative;   
+        z-index: 10;    
         border-style: none;
         color: #000;
         font-size: 1.5rem;
@@ -378,13 +394,14 @@ header{
         border: 1px solid #F90;     
         position: relative;
         z-index: 1;
-        margin-top: 25.58rem;}
+        margin-top: 27.58rem;}
         .diversity-main{
             padding-top: 7.5rem;
             padding-left: 10.3rem;  
+            padding-right: 10.3rem;
             position: relative;   
             z-index: 2;   
-            bottom: 650px;   
+            bottom: 748px;
         .diversity-text{
             color: #000;
             font-size: 2.5rem;
@@ -402,18 +419,216 @@ header{
         }
         .photos{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: ( 28% 26% 43%);
+            gap: 1.25rem;
+            align-items: end;
             .column-1{
                 display: grid;
-                grid-template-rows: (2fr 1fr 1fr);
+                grid-template-rows: 36% 26% 26%;
+                gap: 1.25rem;
+                .row-1{
+                    display: grid;
+                    grid-template-columns: (1fr 1fr);
+                    gap: 1.25rem;
+                }
             }
             .column-3{
                 display: grid;
-                grid-template-rows: (2fr 1fr 1fr);    
+                grid-template-rows: (49% 30%); 
+                gap: 1.25rem; 
+                .column-in{
+                    display: grid;
+                    grid-template-columns: (27% 30% 35%);
+                    gap: 1.25rem;
+                    .row-3{
+                    gap: 1.25rem;
+                    display: grid;
+                    grid-template-rows: (54% 39%);
+                    }
+                }
+
             }
+        }
+        .button-diversity{
+            margin-top: 2.19rem;
+            display: flex;
+            justify-content: flex-end; 
+            button{
+               background: none;          
+               position: relative;   
+               z-index: 10;    
+               border-style: none;
+               color: #000;
+               font-size: 1.5rem;
+               font-style: normal;
+               font-weight: 700;
+               line-height: normal; 
+               border-bottom: 4px solid yellow;
+            }          
         }
 }
 }
+.awards{
+    background: #F6FDEE;
+    padding-top: 7.5rem;
+    padding-left: 10.13rem;
+    padding-right: 10.13rem;
+    padding-bottom: 7.5rem;
+    .awards-name{
+        color: #000;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;  
+        margin-bottom: 5.75rem;      
+        span{
+            color: #F90;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    .awards-content{
+        display: grid;
+        grid-template-columns: 18% 36% 25%;
+        gap: 7.56rem;
+        align-items: end;
+    }
+}
+    .info{
+        background: url(../images/bg3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 9rem 10.13rem;  
+        .info-name{
+            color: #000;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 7.5rem;
+            span{
+                color: #F90;
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;                
+            }
+        }
+        .info-block{
+            display: flex;
+            flex-direction: row;
+            gap: 4.25rem;
+            .block-name-4{
+                color: #000;
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;                
+                span{
+                    color: #F90;
+                    font-size: 2.5rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+                .info-all{
+                 display: flex;
+                 flex-direction: column;
+                 gap: 3.88rem;
+                 .info-top{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 4.25rem;
+                    .office{
+                        .office-name{
+                            color: #000;
+                            font-size: 1.875rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;  
+                            margin-bottom: 2rem;                         
+                        }
+                        color: #000;
+                        font-size: 1.875rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+
+                 }
+                 .info-bottom{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 4.37rem;
+                    .office{
+                        .office-name{
+                            color: #000;
+                            font-size: 1.875rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;  
+                            margin-bottom: 2rem;                         
+                        }
+                        color: #000;
+                        font-size: 1.875rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    .mail{
+
+                    .mail-block{
+                        color: #000;
+                        font-size: 1.875rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal; 
+                        margin-bottom: 2.38rem;                      
+                    }
+                    .mail-name{
+                        color: #000;
+                        font-size: 1.875rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;                       
+                    }
+                    .wright{
+                        background: none;
+                        width: 23rem;
+                        border-style: none;             
+                    }
+                    .line{
+                        background: #000;
+                        width: 31rem;
+                        height: 2px;
+                        margin-bottom: 1.06rem;
+                    }
+                    .button-contact{
+                        margin-top: 2.38rem;
+                        display: flex;
+                        justify-content: flex-end; 
+                        button{
+                           border-radius: 0.3125rem;
+                           background: #F90;
+                           color: #000;
+                           font-size: 1.5rem;
+                           font-style: normal;
+                           font-weight: 700;
+                           line-height: normal;    
+                           padding: 0.75rem 2rem;
+                           border-style: none;                                     
+                     }
+                 }
+                }
+                 
+                }
+            }
+        }
 
 
 @keyframes live-pic{
