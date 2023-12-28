@@ -131,7 +131,10 @@ header{
     display: grid;
     grid-template-columns: (30% 30% 30%);
     align-items: end;
-    column-gap: 4.12rem;
+    gap: 4.12rem;
+    .pic{
+        min-width: 150px;
+    }
     .story-name{
         color: #F90;
         font-size: 24px;
@@ -147,8 +150,7 @@ header{
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;   
-        width: 300px;     
+        line-height: normal;      
     }
     .story-name-center{
         color: #F90;
@@ -165,8 +167,7 @@ header{
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;   
-        width: 350px; 
+        line-height: normal;    
         text-align: center;
     }
 }
@@ -188,7 +189,7 @@ header{
 }
 .collection{
     background: #FFF;
-    height: 700px;
+    height: 100vh;
     .line-1{
         width: 100%; 
         border: 1px solid #F90;     
@@ -241,9 +242,8 @@ header{
             background: rgba(0, 0, 0, 0.40);
             position: relative;
             z-index: 3;
-            width: 320px;
-            height: 500px;
-            bottom: 502px;
+            height: 467px;
+            bottom: 469px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end; 
@@ -381,7 +381,7 @@ header{
 }
 .diversity{
     background: #FFF;
-    height: 700px;
+    height: 100vh;
     .line-1{
         width: 100%; 
         border: 1px solid #F90;     
@@ -419,9 +419,12 @@ header{
         }
         .photos{
             display: grid;
-            grid-template-columns: ( 28% 26% 43%);
+            grid-template-columns: ( 29% 27% 43%);
             gap: 1.25rem;
             align-items: end;
+            .pic{
+                min-width: 150px;
+            }
             .column-1{
                 display: grid;
                 grid-template-rows: 36% 26% 26%;
@@ -438,7 +441,7 @@ header{
                 gap: 1.25rem; 
                 .column-in{
                     display: grid;
-                    grid-template-columns: (27% 30% 35%);
+                    grid-template-columns: (28% 30% 35%);
                     gap: 1.25rem;
                     .row-3{
                     gap: 1.25rem;
@@ -474,6 +477,9 @@ header{
     padding-left: 10.13rem;
     padding-right: 10.13rem;
     padding-bottom: 7.5rem;
+ .pic{
+min-width: 150px;
+ }   
     .awards-name{
         color: #000;
         font-size: 2.5rem;
@@ -629,8 +635,6 @@ header{
                 }
             }
         }
-
-
 @keyframes live-pic{
     0%{
     bottom: 50%;
@@ -679,5 +683,187 @@ header{
     100%{
         bottom:50%;
         left: -100%;
+    }
+}
+@media(max-width:1480px){
+  .collection{
+    height: 120vh;
+    .collection-main{
+        .hotel-row{
+            flex-wrap: wrap;
+            gap: 10rem;
+            .hotel{
+                .image-all{
+                    height: 499px;
+                    bottom: 502px;                   
+                }
+            }
+        }
+    }
+  }
+  .diversity{
+    height: 60vh;
+  }
+}
+@media(max-width:1400px){
+    .diversity{
+        height: 130vh;
+        .diversity-main{
+            padding-left: 6.3rem;
+            padding-right: 6.3rem;
+            .photos{
+                grid-template-columns: 44% 40%;
+                justify-content: center;
+                .column-3{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1255px){
+.info{
+    .info-block{
+        .info-all{
+            .info-top{
+                flex-wrap: wrap;
+            }
+            .info-bottom{
+                flex-direction: column;
+            }
+        }
+    }
+}
+}
+@media(max-width:1200px){
+   .cover-container{ header{
+        flex-direction: column;
+         .name{
+            text-align: center; 
+        }
+        .navigation{
+            justify-content: center;
+            margin-top: 2rem;
+        }
+            .propose{
+           justify-content: center;
+           margin-top: 2rem;
+            }
+    }
+    .cover-center{
+      gap: 5rem;  
+    }
+}
+        
+} 
+@media(max-width:1100px){
+    .cover-container{
+        .cover-center{
+            flex-direction: column;
+            .big-text{
+                text-align: center;
+            }
+        }
+    }
+}
+@media(max-width:1013px){
+    .story{
+        .story-content{
+            grid-template-columns: 50% 50%;           
+        }
+    }
+}
+@media(max-width:1005px){
+      .collection{
+        height: 240vh;
+      }
+      .awards{
+        .awards-content{
+            grid-template-columns: 29% 57%;
+            justify-content: center;
+        }
+      }
+}
+@media(max-width:891px){
+    .info{ 
+        .info-name{
+         text-align: center;
+        }
+        .info-block{
+            justify-content: center;
+            .block-name-4{
+              text-align: center;                
+            }
+                .info-all{
+                    justify-content: center;
+                 .info-top{
+                    text-align: center;
+                    justify-content: center;
+                    .office{
+                        .office-name{
+                        text-align: center;                        
+                        }
+                        color: #000;
+                        font-size: 1.875rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+
+                 }
+                 .info-bottom{
+                    text-align: center;
+                    justify-content: center;
+                    .office{
+                        .office-name{
+                          text-align: center;                        
+                        }
+                    }
+                }
+                 
+                }
+            }
+        }   
+@media(max-width:914px){
+    .diversity{
+        height: 250vh;
+        .diversity-main{
+            padding-left: 1.3rem;
+    padding-right: 1.3rem;
+            .photos{
+                grid-template-columns: 56%;
+            }
+        }
+    }
+    .info{
+        .info-block{
+            flex-direction: column;
+        }
+    }
+}
+@media(max-width:600px){
+    .cover-container{
+    header{
+        .navigation{
+            gap: 1rem;
+        }
+    }
+    .cover-center{
+        .big-text{
+            font-size: 4rem;
+                span{
+                    font-size: 4rem;            
+                }
+       }
+    .cover-text{
+        .quote{
+            font-size: 1.125rem; 
+        }
+            .author{
+                font-size: 1.125rem;                
+            }    
+        }
+    }
     }
 }
