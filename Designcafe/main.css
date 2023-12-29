@@ -1,0 +1,61 @@
+:root{
+--first-font: 'Noto Sans Georgian';
+--second-font: 'Noto Sans Gothic'; 
+--third-font: 'Shadows Into Light';
+}
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0 auto;
+}
+header{
+    background: #668E68;
+    font-family: var(--second-font);
+}
+.cover{
+    background: url(images/coffee\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.title{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.70);
+    font-family: var(--third-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: normal;
+    padding-top: 10.69rem;  
+    padding-bottom: 10.75rem;
+}
+.menu{
+    font-family: var(--third-font);   
+}
+.menu-jap{
+    font-family: var(--second-font);
+}
+.pic{
+    border: 9px solid #81613B;
+    min-width: 300px;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+.name-elements{
+    background: rgba(255, 255, 255, 0.80);   
+    color: #000;
+    font-family: Georgia;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    z-index: 10;
+    width: 21.875rem;
+    height: 5.6875rem;
+    position: relative;
+    bottom: 80px;
+    left: 35px;
+}
