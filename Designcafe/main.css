@@ -42,6 +42,8 @@ header{
     z-index: 1;
     position: relative;
     text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .name-elements{
     background: rgba(255, 255, 255, 0.80);   
@@ -58,4 +60,22 @@ header{
     position: relative;
     bottom: 80px;
     left: 35px;
+}
+.button{
+    background: #668E68;
+    border-style: none;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--second-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    padding-bottom: 3.87rem;   
+}
+.info{
+    background: url(images/cafe\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
