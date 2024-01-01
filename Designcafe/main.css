@@ -13,6 +13,13 @@ header{
     background: #668E68;
     font-family: var(--second-font);
 }
+.logo{
+    font-family: var(--first-font);
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .cover{
     background: url(images/coffee\ 1.png);
     background-size: cover;
@@ -20,7 +27,6 @@ header{
     background-position: center;
 }
 .title{
-    color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.70);
     font-family: var(--third-font);
     font-style: normal;
@@ -31,47 +37,53 @@ header{
     padding-bottom: 10.75rem;
 }
 .menu{
-    font-family: var(--third-font);   
+    font-family: var(--third-font);  
+    color: #000;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.1875rem; 
 }
 .menu-jap{
     font-family: var(--second-font);
+    color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.1875rem;    
 }
 .pic{
     border: 9px solid #81613B;
     min-width: 300px;
     z-index: 1;
     position: relative;
-    text-align: center;
-    border-radius: 50%;
     overflow: hidden;
 }
 .name-elements{
     background: rgba(255, 255, 255, 0.80);   
-    color: #000;
-    font-family: Georgia;
+    font-family: var(--first-font);
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-align: center;
     z-index: 10;
     width: 21.875rem;
     height: 5.6875rem;
     position: relative;
-    bottom: 80px;
-    left: 35px;
+    bottom: 91px;
+    left: 43px;
+    
 }
 .button{
     background: #668E68;
     border-style: none;
-    color: #FFF;
-    text-align: center;
     font-family: var(--second-font);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal; 
-    margin-bottom: 3.87rem;   
+    margin-bottom: 3.87rem; 
+    margin-top: 2.24rem;  
 }
 .info-block{
     background: url(images/cafe\ 1.png);
@@ -100,7 +112,6 @@ header{
 }
 .info{
     width: 19%;
-    color: #FFF;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.70);
     font-family: var(--second-font);
     font-size: 20px;
@@ -119,7 +130,6 @@ header{
     padding-bottom: 5rem;
 }
 .news-jap{
-    color: #000;
     font-family: var(--second-font);
     font-size: 1.25rem;
     font-style: normal;
@@ -128,8 +138,6 @@ header{
     margin-bottom: 3.87rem;
 }
 .news{
-    color: #000;
-    text-align: center;
     font-family: var(--third-font);
     font-size: 2.5rem;
     font-style: normal;
@@ -138,7 +146,6 @@ header{
 }
 .dates{
     border: 1px solid #668E68;   
-    color: #000;
     font-family: var(--second-font);
     font-size: 1rem;
     font-style: normal;
@@ -147,6 +154,12 @@ header{
     width: 58%;
     margin: 0 auto;
     padding: 1.25rem;
+}
+.f-date{
+    gap: 2rem;
+}
+.l-date{
+    gap: 1.37rem;
 }
 .contacts{
     font-family: var(--second-font);
@@ -163,7 +176,139 @@ header{
     font-weight: 400;
     line-height: normal; 
 }
-.f-button{
-    top: 2443px;
-    right: 20px;
+.f-btn{
+    position: relative;
+    bottom: 0px;
+    left: 98%;
+}
+@media(max-width:1399px){
+    .name-elements{
+        left: 0px;
+    }
+}
+@media(max-width:1199px){
+    .name-elements{
+        left: 0px;
+        width: 19.875rem;
+    }
+    .f-btn{
+        left: 96%;
+    }
+}
+@media(max-width:991px){
+    .name-elements{
+        left: 30%;
+        width: 21.875rem;
+    }
+    .info{
+        width: 35%;
+    }
+}
+
+@media(max-width:793px){
+    .name-elements{
+        left: 28%;
+    }
+}
+@media(max-width:769px){
+   .header-inside{
+    flex-direction: column;
+   }
+   .logo{
+    justify-content: center;
+   }
+   .list{
+    justify-content: center;
+   }
+}
+@media(max-width:757px){
+    .name-elements{
+        left: 26%;
+    }
+}
+@media(max-width:705px){
+    .name-elements{
+        left: 24%;
+    }
+}
+@media(max-width:613px){
+    .name-elements{
+        left: 20%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .contacts{
+        text-align: center;
+        margin-bottom: 2.94rem;
+    }
+    .rights{
+        text-align: center; 
+    }
+    .f-btn{
+        left: 78%;
+        bottom: 44px;   
+    }
+    .f-date{
+       flex-direction: column; 
+       gap: 0.31rem;
+    }
+    .l-date{
+       flex-direction: column;
+       gap: 0.31rem;
+    }
+}
+@media(max-width:555px){
+    .name-elements{
+        left: 15%;
+    }
+    .f-btn{
+        left: 80%;   
+    }
+}
+@media(max-width:524px){
+    .f-btn{
+        left: 84%;   
+    }
+    .title{
+        font-size: 95px;
+    }
+}
+@media(max-width:468px){
+    .name-elements{
+        width: 19.875rem;
+        left: 12%;
+    }
+    .f-btn{
+        left: 87%;   
+    }
+    .info{
+        width: 50%;
+    }
+}
+@media(max-width:425px){
+    .f-btn{
+        left: 90%;   
+    }
+    .list{
+        display: none;
+    }
+    .logo{
+        justify-content: flex-start;
+    }
+}
+@media(max-width:410px){
+    .name-elements{
+        left: 9%;
+    }
+}
+@media(max-width:380px){
+    .name-elements{
+        left: 5%;
+    }
+}
+@media(max-width:366px){
+    .f-btn{
+        left: 95%;
+    }
 }
