@@ -108,8 +108,8 @@ header{
 }
 .story{
     padding-top: 7.5rem;
-    padding-left: 8.88rem;
-    padding-right: 8.88rem;
+    padding-left: 7.88rem;
+    padding-right: 7.88rem;
     padding-bottom: 11.81rem;
     background: #F6FDEE;
     .block-name-1{
@@ -206,8 +206,8 @@ header{
     }
     .collection-main{
         padding-top: 7.5rem;
-        padding-left: 3.88rem;
-        padding-right: 3.88rem; 
+        padding-left: 2.88rem;
+        padding-right: 2.88rem; 
         position: relative;   
         z-index: 2;   
         bottom: 750px;
@@ -381,7 +381,7 @@ header{
 }
 .diversity{
     background: #FFF;
-    height: 100vh;
+    height: 150vh;
     .line-1{
         width: 100%; 
         border: 1px solid #F90;     
@@ -419,7 +419,7 @@ header{
         }
         .photos{
             display: grid;
-            grid-template-columns: ( 29% 27% 43%);
+            grid-template-columns: 28% 26% 42%;
             gap: 1.25rem;
             align-items: end;
             .pic{
@@ -837,6 +837,7 @@ min-width: 150px;
         }
     }
     .info{
+        padding: 1rem;
         .info-block{
             flex-direction: column;
         }
@@ -866,4 +867,67 @@ min-width: 150px;
         }
     }
     }
+}
+@media(max-width:539px){
+    .cover-container{
+        header{
+            .navigation{
+                flex-wrap: wrap;
+            }
+        }
+        .cover-center{
+            padding-left: 2rem;
+            padding-right: 2rem;
+            }
+        }
+        .story{
+            .block-name-1{
+                text-align: center;
+            }
+            .story-content{
+                grid-template-columns: 100%;
+                .story-name{
+                    text-align: center;
+                }
+                .story-text{
+                    text-align: center;
+                }
+            }
+        }
+        .collection{
+            .collection-main{
+                .block-name-2{
+                    text-align: center;
+                }
+            }
+        }
+        .vintage{
+            .block-name-3{
+                text-align: center;
+            }
+            .vintage-block{
+                text-align: center;
+                margin: 0 auto;
+                width: 100%;
+
+            }
+        }
+        .diversity{
+            .diversity-main{
+                .diversity-text{
+                    text-align: center;
+                }
+            .photos{
+                grid-template-columns: 100%;
+                .column-3{
+                    .column-in{
+                        grid-template-columns: 46% 50%;
+                        .row-3{
+                            grid-template-rows: 56% 39%;
+                        }
+                    }
+                }
+            }
+        }
+ }
 }
