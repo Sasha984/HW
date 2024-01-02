@@ -250,7 +250,7 @@ header{
             padding-left: 1.25rem;   
             padding-bottom: 4.38rem;  
             padding-right: 2.25rem;
-
+            min-width: 360px;
             .city{
                 color: #FFF;
                 font-size: 24px;
@@ -502,7 +502,7 @@ min-width: 150px;
         align-items: end;
     }
 }
-    .info{
+.info{
         background: url(../images/bg3.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -605,7 +605,7 @@ min-width: 150px;
                     }
                     .wright{
                         background: none;
-                        width: 23rem;
+                        width: 21rem;
                         border-style: none;             
                     }
                     .line{
@@ -868,7 +868,7 @@ min-width: 150px;
     }
     }
 }
-@media(max-width:539px){
+@media(max-width:550px){
     .cover-container{
         header{
             .navigation{
@@ -881,6 +881,8 @@ min-width: 150px;
             }
         }
         .story{
+            padding-left: 4.88rem;
+            padding-right: 4.88rem;
             .block-name-1{
                 text-align: center;
             }
@@ -900,6 +902,9 @@ min-width: 150px;
                     text-align: center;
                 }
             }
+            .button-hotel{
+                padding-right: 2.4rem;
+            }
         }
         .vintage{
             .block-name-3{
@@ -913,6 +918,7 @@ min-width: 150px;
             }
         }
         .diversity{
+            height: 286vh;
             .diversity-main{
                 .diversity-text{
                     text-align: center;
@@ -930,4 +936,44 @@ min-width: 150px;
             }
         }
  }
+ .awards{
+    padding-left: 2.1rem;
+  padding-right: 2.13rem;
+    .awards-name{
+        text-align: center;
+    }
+    .awards-content{
+        grid-template-columns: 100%;
+    }
+ }
+ .info{  
+    .info-block{
+             .info-bottom{
+                .mail{
+                .wright{
+                    width: 10rem;            
+                }
+                .line{
+                    width: 21rem;
+                }
+            }
+             
+            }
+        }
+    }
+}
+@media(max-width:490px){
+    .diversity{
+        height: 250vh;
+    }
+}
+@media(max-width:415px){
+    .diversity{
+        height: 212vh;
+    }
+}
+@media(max-width:370px){
+    .diversity{
+        height: 189vh;
+    }
 }
