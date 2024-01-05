@@ -189,13 +189,13 @@ header{
 }
 .collection{
     background: #FFF;
-    height: 100vh;
+    padding-bottom: 22rem;
     .line-1{
         width: 100%; 
         border: 1px solid #F90;     
         position: relative;
         z-index: 1;
-        margin-top: 16.61rem;
+        margin-top: 17.61rem;
     }
     .line-2{
         width: 100%; 
@@ -205,12 +205,12 @@ header{
         margin-top: 25.58rem;
     }
     .collection-main{
-        padding-top: 7.5rem;
         padding-left: 2.88rem;
         padding-right: 2.88rem; 
-        position: relative;   
+        position: absolute;   
         z-index: 2;   
-        bottom: 750px;
+        top: 2210px;
+        width: 100%;
     .block-name-2{
         color: #000;
         font-size: 2.5rem;
@@ -218,6 +218,7 @@ header{
         font-weight: 700;
         line-height: normal;  
         margin-bottom: 8.12rem;
+        margin-top: 120px;
         span{
             color: #F90;
             font-size: 2.5rem;
@@ -250,7 +251,7 @@ header{
             padding-left: 1.25rem;   
             padding-bottom: 4.38rem;  
             padding-right: 2.25rem;
-            min-width: 360px;
+            min-width: 320px;
             .city{
                 color: #FFF;
                 font-size: 24px;
@@ -687,7 +688,13 @@ min-width: 150px;
 }
 @media(max-width:1480px){
   .collection{
-    height: 120vh;
+    padding-bottom: 30rem;
+    .line-1{
+        margin-top: 32.61rem;
+    }
+    .line-2{
+        margin-top: 43.58rem;
+    }
     .collection-main{
         .hotel-row{
             flex-wrap: wrap;
@@ -772,11 +779,13 @@ min-width: 150px;
             grid-template-columns: 50% 50%;           
         }
     }
+    .collection{
+        .collection-main{
+            top: 3309px;
+        }
+    }
 }
 @media(max-width:1005px){
-      .collection{
-        height: 240vh;
-      }
       .awards{
         .awards-content{
             grid-template-columns: 29% 57%;
@@ -784,7 +793,19 @@ min-width: 150px;
         }
       }
 }
+@media(max-width:972px){
+    .collection{
+        .line-1{
+            margin-top: 60.61rem;
+        }
+        padding-bottom: 85rem;
+    }
+}
+
 @media(max-width:891px){
+    .collection{
+        padding-bottom: 93rem;
+    }
     .info{ 
         .info-name{
          text-align: center;
@@ -844,6 +865,12 @@ min-width: 150px;
     }
 }
 @media(max-width:600px){
+    .collection{
+        padding-bottom: 78rem;
+        .collection-main{
+            top: 2749px;
+        }
+    }
     .cover-container{
     header{
         .navigation{
@@ -898,6 +925,7 @@ min-width: 150px;
         }
         .collection{
             .collection-main{
+                top: 4000px;
                 .block-name-2{
                     text-align: center;
                 }
@@ -965,6 +993,20 @@ min-width: 150px;
 @media(max-width:490px){
     .diversity{
         height: 250vh;
+    }
+}
+@media(max-width:436px){
+    .collection{
+        .collection-main{
+            .hotel-row{
+                .hotel{
+                    .image-all{
+                        height: 489px;
+                        bottom: 494px;
+                    }
+                }
+            }
+        }
     }
 }
 @media(max-width:415px){
