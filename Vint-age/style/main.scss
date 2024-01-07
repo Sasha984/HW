@@ -204,35 +204,35 @@ header{
         z-index: 1;
         margin-top: 25.58rem;
     }
-    .collection-main{
-        padding-left: 2.88rem;
-        padding-right: 2.88rem; 
+    .collection-main{ 
         position: absolute;   
         z-index: 2;   
         top: 2210px;
+        padding-left: 8.87rem;
+        padding-right: 8.87rem;
         width: 100%;
-    .block-name-2{
-        color: #000;
-        font-size: 2.5rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;  
-        margin-bottom: 8.12rem;
-        margin-top: 120px;
-        span{
-            color: #F90;
+        .block-name-2{
+            color: #000;
             font-size: 2.5rem;
             font-style: normal;
             font-weight: 700;
-            line-height: normal;            
-        }      
-    }
-    .hotel-row{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 2rem;
-        padding-bottom: 1.88rem; 
+            line-height: normal;  
+            margin-bottom: 8.12rem;
+            margin-top: 120px;
+            span{
+                color: #F90;
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;            
+            }  
+        }    
+        .hotel-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+            padding-bottom: 1.88rem;           
     .hotel{
         height: 500px;
         img{
@@ -275,10 +275,9 @@ header{
 
 
 }
-}
 .button-hotel{
-    text-align: right;
     padding-bottom: 3rem;
+    text-align: right;
       button{
          border-style: none;
          background: none;
@@ -290,6 +289,7 @@ header{
          border-bottom: 4px solid yellow;  
 }
 }
+    }
 }
 .vintage{
     background: url(../images/bg2.png);
@@ -382,9 +382,8 @@ header{
 }
 .diversity{
     background: #FFF;
-    height: 150vh;
     .line-1{
-        width: 100%; 
+        width: 100%;
         border: 1px solid #F90;     
         position: relative;
         z-index: 1;
@@ -395,21 +394,23 @@ header{
         border: 1px solid #F90;     
         position: relative;
         z-index: 1;
-        margin-top: 27.58rem;}
+        margin-top: 27.58rem;
+        margin-bottom: 13rem;
+    }
         .diversity-main{
             padding-top: 7.5rem;
-            padding-left: 10.3rem;  
-            padding-right: 10.3rem;
-            position: relative;   
+            padding-left: 8.87rem;  
+            padding-right: 8.87rem;
+            position: absolute;   
             z-index: 2;   
-            bottom: 748px;
+            top: 4150px;
         .diversity-text{
             color: #000;
             font-size: 2.5rem;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            margin-bottom: 3.13rem;    
+            margin-bottom: 3.13re   m;    
             span{
                 color: #F90;
                 font-size: 2.5rem;
@@ -708,13 +709,10 @@ min-width: 150px;
         }
     }
   }
-  .diversity{
-    height: 60vh;
-  }
+ 
 }
 @media(max-width:1400px){
     .diversity{
-        height: 130vh;
         .diversity-main{
             padding-left: 6.3rem;
             padding-right: 6.3rem;
@@ -990,11 +988,7 @@ min-width: 150px;
         }
     }
 }
-@media(max-width:490px){
-    .diversity{
-        height: 250vh;
-    }
-}
+
 @media(max-width:436px){
     .collection{
         .collection-main{
@@ -1007,15 +1001,5 @@ min-width: 150px;
                 }
             }
         }
-    }
-}
-@media(max-width:415px){
-    .diversity{
-        height: 212vh;
-    }
-}
-@media(max-width:370px){
-    .diversity{
-        height: 189vh;
     }
 }
