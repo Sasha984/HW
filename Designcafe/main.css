@@ -57,7 +57,7 @@ header{
     min-width: 300px;
     z-index: 1;
     position: relative;
-    overflow: hidden;
+    height: 427px;
 }
 .name-elements{
     background: rgba(255, 255, 255, 0.80);   
@@ -71,7 +71,7 @@ header{
     height: 5.6875rem;
     position: relative;
     bottom: 91px;
-    left: 43px;
+    left: 37px;
     
 }
 .button{
@@ -185,11 +185,17 @@ header{
     .name-elements{
         left: 0px;
     }
+    .pic{
+        height: 366px;
+    }
 }
 @media(max-width:1199px){
     .name-elements{
         left: 0px;
         width: 19.875rem;
+    }
+    .pic{
+        height: 309px;
     }
     .f-btn{
         left: 96%;
